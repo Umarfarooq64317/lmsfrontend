@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LMS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="/"><h1>📚 LMS</h1></a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/dashboard" class="nav-link active">Dashboard</a></li>
+                    <li><a href="/courses" class="nav-link">Courses</a></li>
+                    <li><a href="/profile" class="nav-link">Profile</a></li>
+                    <li><button class="nav-link btn-outline" id="logoutBtn">Logout</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h1>Welcome back, <span id="userName">Student</span>!</h1>
+                    <p>Continue your learning journey</p>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-info">
+                            <h3 id="totalCourses">4</h3>
+                            <p>Total Courses</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-info">
+                            <h3 id="lessonsCompleted">0</h3>
+                            <p>Lessons Completed</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📖</div>
+                        <div class="stat-info">
+                            <h3 id="totalLessons">0</h3>
+                            <p>Total Lessons</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense Placeholder -->
+                <div class="ad-slot ad-banner">
+                    <p>AdSense Ad Placeholder</p>
+                </div>
+
+                <!-- Quick Access -->
+                <section class="quick-access">
+                    <h2>Quick Access</h2>
+                    <div class="courses-grid" id="quickCourses">
+                        <!-- Courses will be loaded here -->
+                    </div>
+                </section>
+
+                <!-- Latest Updates -->
+                <section class="latest-updates">
+                    <h2>Latest Updates</h2>
+                    <div class="updates-list" id="updatesList">
+                        <div class="update-item">
+                            <p>Welcome to LMS! Start learning today.</p>
+                            <span class="update-date">Just now</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 LMS by UMAR FAROOQ. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/auth.js"></script>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
+

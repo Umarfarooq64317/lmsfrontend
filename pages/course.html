@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course - LMS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="/"><h1>📚 LMS</h1></a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/dashboard" class="nav-link">Dashboard</a></li>
+                    <li><a href="/courses" class="nav-link">Courses</a></li>
+                    <li id="userMenu" style="display: none;">
+                        <a href="/profile" class="nav-link">Profile</a>
+                        <button class="nav-link btn-outline" id="logoutBtn">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="container course-layout">
+                <!-- Sidebar -->
+                <aside class="course-sidebar">
+                    <h2 id="courseTitle">Course Title</h2>
+                    <div class="lessons-list" id="lessonsList">
+                        <!-- Lessons will be loaded here -->
+                    </div>
+
+                    <!-- AdSense Placeholder -->
+                    <div class="ad-slot ad-sidebar">
+                        <p>AdSense Ad Placeholder</p>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="course-content">
+                    <div class="lesson-header">
+                        <h1 id="lessonTitle">Select a lesson to begin</h1>
+                    </div>
+                    <div class="lesson-body" id="lessonContent">
+                        <p>Choose a lesson from the sidebar to start learning.</p>
+                    </div>
+
+                    <!-- AdSense Placeholder -->
+                    <div class="ad-slot ad-inline">
+                        <p>AdSense Ad Placeholder</p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="lesson-navigation">
+                        <button class="btn btn-outline" id="prevLesson" disabled>Previous</button>
+                        <button class="btn btn-primary" id="completeLesson" style="display: none;">Mark as Complete</button>
+                        <button class="btn btn-outline" id="nextLesson" disabled>Next</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 LMS by UMAR FAROOQ. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/course.js"></script>
+</body>
+</html>
+
